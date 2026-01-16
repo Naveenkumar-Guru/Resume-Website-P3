@@ -1,0 +1,271 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+     HEADER
+  ========================= */
+.header {
+  background: linear-gradient(135deg, #6d28d9, #7c3aed, #a78bfa);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.header-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header-text h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.header-text p {
+  font-size: 1rem;
+}
+
+/* =========================
+     SECTIONS
+  ========================= */
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #6d28d9;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #6d28d9;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.section-text {
+  font-size: 1rem;
+  color: #555;
+  max-width: 800px;
+}
+
+/* =========================
+     SKILLS GRID
+  ========================= */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-card {
+  background-color: #fff;
+  color: #6d28d9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+     EXPERIENCE / INTERNSHIP
+  ========================= */
+.experience-card {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.experience-card h4 {
+  color: #6d28d9;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.experience-card ul {
+  margin-left: 20px;
+  color: #555;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+     EDUCATION
+  ========================= */
+
+/* =========================
+   EDUCATION SECTION
+========================= */
+/* =========================
+   EDUCATION SECTION
+========================= */
+.section.education {
+  padding: 30px 0;
+}
+
+.section.education .section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.section.education .section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #6d28d9;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* Education Item */
+.education-item {
+  background-color: #fff; /* optional for card-like feel */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+.education-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.education-item p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+/* Optional subtle separator (instead of hr) */
+.education-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+/* Compact view for mobile */
+@media (max-width: 768px) {
+  .education-item {
+    padding: 12px 15px;
+  }
+
+  .education-item h4 {
+    font-size: 14px;
+  }
+
+  .education-item p {
+    font-size: 13px;
+  }
+}
+/* =========================
+     FOOTER
+  ========================= */
+.footer {
+  background-color: #6d28d9;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* =========================
+     RESPONSIVE
+  ========================= */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .header-text h2 {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
